@@ -4,13 +4,19 @@
 
   {{#each products}}
   <div class="table	table-bordered  text-center row">
-
-    <h3>{{ name }}</h3>
-    <p>{{ price }}</p>
-    <p class=""><img src="{{anh}}" alt="{{ name }}"></p>
-    <p>{{ mau }}</p>
-    <input class="btn-light btn p-b-20" type="submit" value="Sửa">
-    <input class="btn-light btn btn-block" type="submit" value="Xóa">
+    <p class="col-sm-4 "><img src="{{anh}}" alt="{{ name }}"></p>
+    <p class="col-sm-6">
+     <a class="h3 text-dark text-decoration-none"> {{ name }}</a>
+      <br><br><br>
+      {{ price }}
+      <br><br><br>
+      {{ mau }}
+    </p>
+    <div class="col-sm-2">
+      <input class="btn-light btn  " type="submit" value="Sửa">
+      <br> <br>
+      <input class="btn-light btn btn-block" type="submit" value="Xóa">
+    </div>
   </div>
   <br>
   <hr>
