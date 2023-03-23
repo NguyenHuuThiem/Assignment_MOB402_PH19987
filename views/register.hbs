@@ -1,0 +1,31 @@
+<!-- register.handlebars -->
+<div class="container">
+    <div class="row justify-content-around">
+        <form class="col-md-4 bg-light p-3" action="/register" method="POST">
+            <h1 class="text-center text-uppercase h2">Đăng ký tài khoản</h1>
+            <div class="from-group">
+                <label for="fullname">Họ và tên</label>
+                <input class="form-control" type="text" name="fullname" required>
+
+            </div>
+
+            <div class="from-group">
+                <label>Email</label>
+                <input class="form-control" type="email" name="email" required>
+            </div>
+
+
+            <label>Password</label>
+            <input class="form-control" type="password" name="password" required>
+
+            <label>Avatar</label>
+            <input class="form-control" type="file" name="avatar" accept="image/*" required>
+            <br>
+            <a href="./login">Đăng nhập</a>
+            <br>
+            <br>
+            <button type="submit">Đăng ký</button>
+
+        </form>
+    </div>
+</div>

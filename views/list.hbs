@@ -1,0 +1,18 @@
+<ul> 
+  <input class="p-30" type="" name="Tìm kiếm">
+  <h1 class="text-center">Danh sách sản phẩm</h1>
+  
+  {{#each products}}
+  <div class="table	table-bordered  text-center row">
+    
+    <h3>{{ name }}</h3>
+    <p>{{ price }}</p>
+    <p><img  src="{{anh}}" alt="{{ name }}"></p>
+    <p>{{ mau }}</p>
+    <button>Xóa </button> 
+    <button>Sửa</button>
+  </div>
+  <br>
+  <hr>
+  {{/each}}
+</ul>
