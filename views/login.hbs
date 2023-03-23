@@ -1,10 +1,19 @@
 <!-- login.handlebars -->
-<form action="/login" method="POST">
-    <label>Email</label>
-    <input type="email" name="email" required>
-    <br><br>
-    <label>Password</label>
-    <input type="password" name="password" required>
-    <br><br>
-    <button type="submit">Đăng nhập</button>
-</form>
+<div class="container p-3">
+    <div class="row justify-content-around">
+        <form class="col-md-4 bg-light p-3" action="/login" method="POST">
+            <h1 class="text-center text-uppercase h2">Đăng nhập</h1>
+            <div class="from-group">
+                <label>Email</label>
+                <input class="form-control" type="email" name="email" required>
+            </div>
+
+            <div class="from-group">
+                <label>Password</label>
+                <input class="form-control" type="password" name="password" required>
+            </div>
+            <br>
+            <input class="btn-primary btn btn-block" type="submit" value="Đăng nhập">
+        </form>
+    </div>
+</div>

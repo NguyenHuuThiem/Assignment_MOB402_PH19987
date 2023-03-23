@@ -1,16 +1,16 @@
-<ul> 
-  <input class="p-30" type="" name="Tìm kiếm">
-  <h1 class="text-center">Danh sách sản phẩm</h1>
-  
+<ul>
+  <h1 class="text-center p-3">Danh sách sản phẩm</h1>
+  <hr>
+
   {{#each products}}
   <div class="table	table-bordered  text-center row">
-    
+
     <h3>{{ name }}</h3>
     <p>{{ price }}</p>
-    <p><img  src="{{anh}}" alt="{{ name }}"></p>
+    <p class=""><img src="{{anh}}" alt="{{ name }}"></p>
     <p>{{ mau }}</p>
-    <button>Xóa </button> 
-    <button>Sửa</button>
+    <input class="btn-light btn p-b-20" type="submit" value="Sửa">
+    <input class="btn-light btn btn-block" type="submit" value="Xóa">
   </div>
   <br>
   <hr>
