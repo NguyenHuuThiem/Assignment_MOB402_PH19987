@@ -60,6 +60,47 @@ app.post('/login', (req, res) => {
 //     res.render("list", { list: person });
 //     // res.render('list');
 // });
+app.get('/list', (req, res) => {
+    const products = [
+        {
+            id: 1,
+            msp: 'PH19987', name: 'Áo Phông nam', price: 'Giá: ' + 10 + ' VND',
+            anh: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-pEf-DNrDFwHjMRkUS5ctQx397lFLRoXSw&usqp=CAU',
+            mau: 'Màu:' + ' Trắng'
+        },
+
+        {
+            id: 2,
+            msp: 'PH19987', name: 'Áo Phông nam', price: 'Giá: ' + 10 + ' VND',
+            anh: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-pEf-DNrDFwHjMRkUS5ctQx397lFLRoXSw&usqp=CAU',
+            mau: 'Màu:' + ' Đen'
+        },
+
+        {
+            id: 3,
+            msp: 'PH19987', name: 'Áo Phông nam', price: 'Giá: ' + 10 + ' VND',
+            anh: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-pEf-DNrDFwHjMRkUS5ctQx397lFLRoXSw&usqp=CAU',
+            mau: 'Màu:' + ' Xanh'
+        },
+        {
+            id: 4,
+            msp: 'PH19987', name: 'Áo Phông nam', price: 'Giá: ' + 10 + ' VND',
+            anh: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-pEf-DNrDFwHjMRkUS5ctQx397lFLRoXSw&usqp=CAU',
+            mau: 'Màu:' + ' Trắng'
+        },
+
+        {
+            id: 5,
+            msp: 'PH19987', name: 'Áo Phông nam', price: 'Giá: ' + 10 + ' VND',
+            anh: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-pEf-DNrDFwHjMRkUS5ctQx397lFLRoXSw&usqp=CAU',
+            mau: 'Màu:' + ' Đen'
+        }
+        //   { name: 'Product 2', price: 20 },
+        //   { name: 'Product 3', price: 30 }
+    ];
+    res.render('list', { products });
+});
+
 
 
 app.get('/update', (req, res) => {
@@ -68,25 +109,3 @@ app.get('/update', (req, res) => {
 app.post('/update', (req, res) => {
     res.redirect('/list');
 });
-
-app.get('/delete', (req, res) => {
-
-    res.render('delete');
-});
-
-
-
-
-// app.post('/list', (req, res) => {
-
-// });
-
-// // Đăng nhập
-// app.get('/login', (req, res) => {
-//     res.render('login');
-// });
-
-// app.post('/login', (req, res) => {
-//     // Xử lý đăng nhập ở đây
-// });
-

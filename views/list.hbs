@@ -4,19 +4,21 @@
 
   {{#each products}}
   <div class="table	table-bordered  text-center row">
+    
     <p class="col-sm-4 "><img src="{{anh}}" alt="{{ name }}"></p>
     <p class="col-sm-6">
-     <a class="h3 text-dark text-decoration-none"> {{ name }}</a>
+      <a class="h3 text-dark text-decoration-none"> {{ name }}</a>
       <br><br><br>
       {{ price }}
       <br><br><br>
       {{ mau }}
     </p>
     <div class="col-sm-2">
-      <a class="btn-light btn" href="./update">Sửa</a>
-      {{!-- <input class="btn-light btn  " type="submit" value="Sửa"> --}}
+      {{!-- <a href="/products/delete/{{id}}">Xóa</a> --}}
+      <input class="btn-light btn  " type="submit" value="Sửa">
       <br> <br>
-      <input class="btn-light btn btn-block" type="submit" value="Xóa">
+      <a class="btn-light btn" href="./update">Sửa</a>
+      {{!-- <input class="btn-light btn btn-block" type="submit" value="Xóa"> --}}
     </div>
   </div>
   <br>
